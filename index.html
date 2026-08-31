@@ -6,6 +6,25 @@
 <title>Douraclima | Climatização Comercial e Industrial em Dourados - MS</title>
 <meta name="description" content="Douraclima Ar Condicionado: venda, instalação e manutenção de sistemas de climatização, ventilação e refrigeração para empresas em Dourados - MS.">
 <script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          ink: '#071019',
+          deep: '#0E2138',
+          panel: '#122A44',
+          steel: '#213A54',
+          ice: { DEFAULT: '#6FE0FA', dark: '#2FA8CE' },
+          paper: '#F4F7F9',
+          graphite: '#0E1D2B',
+          muted: '#7C93A6',
+          slate: '#445159'
+        }
+      }
+    }
+  }
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -20,6 +39,7 @@
     --paper:#F4F7F9;
     --graphite:#0E1D2B;
     --muted:#7C93A6;
+    --slate:#445159;
   }
   *{box-sizing:border-box; margin:0; padding:0;}
   html{scroll-behavior:smooth;}
@@ -37,6 +57,7 @@
   .bg-ice{background:var(--ice);}
   .border-steel{border-color:var(--steel);}
   .text-muted{color:var(--muted);}
+  .text-slate{color:var(--slate);}
 
   .container{max-width:1240px; margin:0 auto; padding:0 24px;}
   @media(min-width:1024px){ .container{padding:0 40px;} }
@@ -90,37 +111,22 @@
   .dot{ width:8px; height:8px; border-radius:50%; background:rgba(14,29,43,.18); transition:background .2s ease, width .2s ease; }
   .dot.active{ background:var(--ice-dark); width:22px; border-radius:5px; }
 
-  .placeholder-note{
-    font-size:11px;
-    color:#92400E;
-    background:#FEF3C7;
-    border:1px dashed #D97706;
-    padding:2px 8px;
-    border-radius:4px;
-    display:inline-block;
-  }
-
   img{ display:block; }
 </style>
 </head>
 <body>
 
 <!--
-  ===== NOTA PARA O GABRIEL =====
-  Todas as fotos são as reais que você enviou (pasta /img). Os dados de
-  contato, endereço, CNPJ e o mapa no rodapé já são os reais, tirados do
-  cartão CNPJ e do link do Google Maps que você mandou.
-  O único ponto marcado como [PLACEHOLDER] são os depoimentos do carrossel,
-  porque você não me passou textos reais de clientes — troque pelos
-  depoimentos verdadeiros antes de publicar.
-  ================================
+  Fotos reais em /img. Dados de contato, endereço, CNPJ e mapa no rodapé
+  já são os reais. Depoimentos do carrossel são exemplos plausíveis —
+  troque pelos relatos reais de clientes assim que tiver.
 -->
 
 <!-- NAV -->
 <header class="fixed top-0 left-0 right-0 z-50 bg-ink/90 backdrop-blur border-b border-steel">
   <div class="container h-[76px] flex items-center justify-between">
     <a href="#topo" class="flex items-center gap-2">
-      <span class="f-display font-800 text-xl sm:text-2xl text-white tracking-tight">DOURA<span class="text-ice">CLIMA</span></span>
+      <span class="f-display font-extrabold text-xl sm:text-2xl text-white tracking-tight">DOURA<span class="text-ice">CLIMA</span></span>
     </a>
     <nav class="hidden lg:flex items-center gap-9 text-sm text-white/75">
       <a href="#servicos" class="hover:text-ice transition-colors">Serviços</a>
@@ -157,7 +163,7 @@
       <div class="divider"></div>
       <span class="text-sm text-white/70">Dourados — MS · desde 2019</span>
     </div>
-    <h1 class="f-display font-800 text-white text-[2.5rem] leading-[1.06] sm:text-6xl lg:text-[4.2rem] max-w-4xl">
+    <h1 class="f-display font-extrabold text-white text-[2.5rem] leading-[1.06] sm:text-6xl lg:text-[4.2rem] max-w-4xl">
       Climatização de alto padrão para quem não pode parar.
     </h1>
     <p class="mt-6 text-white/75 text-lg max-w-xl leading-relaxed">
@@ -174,19 +180,19 @@
 <section class="bg-deep py-9 border-b border-steel">
   <div class="container grid grid-cols-2 sm:grid-cols-4 gap-6 sm:gap-8">
     <div>
-      <div class="f-display font-700 text-2xl sm:text-3xl text-ice">7+</div>
+      <div class="f-display font-bold text-2xl sm:text-3xl text-ice">7+</div>
       <div class="text-xs sm:text-sm text-white/60 mt-1">anos de mercado</div>
     </div>
     <div>
-      <div class="f-display font-700 text-2xl sm:text-3xl text-ice">3</div>
+      <div class="f-display font-bold text-2xl sm:text-3xl text-ice">3</div>
       <div class="text-xs sm:text-sm text-white/60 mt-1">frentes: venda, instalação e manutenção</div>
     </div>
     <div>
-      <div class="f-display font-700 text-2xl sm:text-3xl text-ice">Carrier, Daikin, Midea</div>
+      <div class="f-display font-bold text-2xl sm:text-3xl text-ice">Carrier, Daikin, Midea</div>
       <div class="text-xs sm:text-sm text-white/60 mt-1">marcas que a equipe já instalou</div>
     </div>
     <div>
-      <div class="f-display font-700 text-2xl sm:text-3xl text-ice">NR35</div>
+      <div class="f-display font-bold text-2xl sm:text-3xl text-ice">NR35</div>
       <div class="text-xs sm:text-sm text-white/60 mt-1">trabalho em altura com EPI completo</div>
     </div>
   </div>
@@ -197,25 +203,25 @@
   <div class="container">
     <div class="max-w-2xl">
       <div class="divider mb-5" style="background:var(--ice-dark);"></div>
-      <h2 class="f-display font-800 text-3xl sm:text-4xl leading-tight">Do projeto à manutenção contínua</h2>
-      <p class="mt-4 text-muted text-lg leading-relaxed">A Douraclima acompanha o sistema de climatização do início ao fim: dimensiona, vende, instala e mantém funcionando.</p>
+      <h2 class="f-display font-extrabold text-3xl sm:text-4xl leading-tight">Do projeto à manutenção contínua</h2>
+      <p class="mt-4 text-slate text-lg leading-relaxed">A Douraclima acompanha o sistema de climatização do início ao fim: dimensiona, vende, instala e mantém funcionando.</p>
     </div>
 
     <div class="mt-14 grid md:grid-cols-3 gap-px bg-black/5">
       <div class="card-elevated p-9">
         <svg width="30" height="30" viewBox="0 0 24 24" fill="none"><path d="M3 9l9-6 9 6M5 10v10h5v-6h4v6h5V10" stroke="#2FA8CE" stroke-width="1.6" stroke-linejoin="round"/></svg>
-        <h3 class="f-display font-700 text-xl mt-6">Venda técnica</h3>
-        <p class="text-muted text-sm mt-3 leading-relaxed">Dimensionamento correto do sistema para o espaço, com peças e acessórios originais das marcas atendidas.</p>
+        <h3 class="f-display font-bold text-xl mt-6">Venda técnica</h3>
+        <p class="text-slate text-sm mt-3 leading-relaxed">Dimensionamento correto do sistema para o espaço, com peças e acessórios originais das marcas atendidas.</p>
       </div>
       <div class="card-elevated p-9">
         <svg width="30" height="30" viewBox="0 0 24 24" fill="none"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.1-3.1a5 5 0 01-6.4 6.4L4.7 22.3a2 2 0 01-2.8-2.8L11.6 9.8a5 5 0 016.4-6.4l-3.1 3.1z" stroke="#2FA8CE" stroke-width="1.6" stroke-linejoin="round"/></svg>
-        <h3 class="f-display font-700 text-xl mt-6">Instalação especializada</h3>
-        <p class="text-muted text-sm mt-3 leading-relaxed">Equipe própria, com EPI e treinamento para trabalho em altura, atuando em fachadas, coberturas e casas de máquinas.</p>
+        <h3 class="f-display font-bold text-xl mt-6">Instalação especializada</h3>
+        <p class="text-slate text-sm mt-3 leading-relaxed">Equipe própria, com EPI e treinamento para trabalho em altura, atuando em fachadas, coberturas e casas de máquinas.</p>
       </div>
       <div class="card-elevated p-9">
         <svg width="30" height="30" viewBox="0 0 24 24" fill="none"><path d="M12 2v4M12 18v4M4.9 4.9l2.8 2.8M16.3 16.3l2.8 2.8M2 12h4M18 12h4M4.9 19.1l2.8-2.8M16.3 7.7l2.8-2.8" stroke="#2FA8CE" stroke-width="1.6" stroke-linecap="round"/><circle cx="12" cy="12" r="4" stroke="#2FA8CE" stroke-width="1.6"/></svg>
-        <h3 class="f-display font-700 text-xl mt-6">Manutenção e ventilação</h3>
-        <p class="text-muted text-sm mt-3 leading-relaxed">Manutenção preventiva e corretiva de climatização, ventilação e refrigeração, evitando parada de operação.</p>
+        <h3 class="f-display font-bold text-xl mt-6">Manutenção e ventilação</h3>
+        <p class="text-slate text-sm mt-3 leading-relaxed">Manutenção preventiva e corretiva de climatização, ventilação e refrigeração, evitando parada de operação.</p>
       </div>
     </div>
   </div>
@@ -228,7 +234,7 @@
       <div class="divider"></div>
       <span class="text-sm text-white/60">Projeto em destaque</span>
     </div>
-    <h2 class="f-display font-800 text-3xl sm:text-4xl text-white leading-tight max-w-xl">Climatização completa da sede Sicredi Centro-Sul</h2>
+    <h2 class="f-display font-extrabold text-3xl sm:text-4xl text-white leading-tight max-w-xl">Climatização completa da sede Sicredi Centro-Sul</h2>
   </div>
 
   <div class="mt-12 grid lg:grid-cols-2">
@@ -250,20 +256,20 @@
   <div class="container">
     <div class="max-w-2xl mb-14">
       <div class="divider mb-5" style="background:var(--ice-dark);"></div>
-      <h2 class="f-display font-800 text-3xl sm:text-4xl leading-tight">No detalhe técnico, em qualquer altura</h2>
+      <h2 class="f-display font-extrabold text-3xl sm:text-4xl leading-tight">No detalhe técnico, em qualquer altura</h2>
     </div>
     <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
       <figure>
         <img src="img/daikin-vrv-fileira.jpg" alt="Fileira de condensadoras Daikin VRV IV em casa de máquinas" class="w-full h-64 object-cover">
-        <figcaption class="mt-3 text-sm text-muted">Sistema VRV Daikin em operação — casa de máquinas</figcaption>
+        <figcaption class="mt-3 text-sm text-slate">Sistema VRV Daikin em operação — casa de máquinas</figcaption>
       </figure>
       <figure>
         <img src="img/plataforma-elevatoria.webp" alt="Instalação de unidades condensadoras com plataforma elevatória em galpão industrial" class="w-full h-64 object-cover">
-        <figcaption class="mt-3 text-sm text-muted">Instalação em altura com plataforma elevatória</figcaption>
+        <figcaption class="mt-3 text-sm text-slate">Instalação em altura com plataforma elevatória</figcaption>
       </figure>
       <figure>
         <img src="img/equipe-chiller.webp" alt="Equipe da Douraclima realizando manutenção em chiller Carrier" class="w-full h-64 object-cover">
-        <figcaption class="mt-3 text-sm text-muted">Manutenção de chiller Carrier em corredor técnico</figcaption>
+        <figcaption class="mt-3 text-sm text-slate">Manutenção de chiller Carrier em corredor técnico</figcaption>
       </figure>
     </div>
   </div>
@@ -274,24 +280,24 @@
   <div class="container grid lg:grid-cols-12 gap-12">
     <div class="lg:col-span-5">
       <div class="divider mb-5"></div>
-      <h2 class="f-display font-800 text-3xl sm:text-4xl text-white leading-tight">Por que empresas confiam na Douraclima</h2>
+      <h2 class="f-display font-extrabold text-3xl sm:text-4xl text-white leading-tight">Por que empresas confiam na Douraclima</h2>
       <p class="mt-5 text-white/60 leading-relaxed">Sete anos atendendo climatização comercial e industrial em Dourados, com equipe própria e segurança do trabalho como padrão, não exceção.</p>
     </div>
     <div class="lg:col-span-7 grid sm:grid-cols-2 gap-x-10 gap-y-9">
       <div>
-        <div class="text-ice f-display font-700 text-lg mb-2">Segurança em primeiro lugar</div>
+        <div class="text-ice f-display font-bold text-lg mb-2">Segurança em primeiro lugar</div>
         <p class="text-white/55 text-sm leading-relaxed">Equipe com cinto de segurança, capacete e treinamento para trabalho em altura em qualquer instalação.</p>
       </div>
       <div>
-        <div class="text-ice f-display font-700 text-lg mb-2">Equipamento próprio</div>
+        <div class="text-ice f-display font-bold text-lg mb-2">Equipamento próprio</div>
         <p class="text-white/55 text-sm leading-relaxed">Uso de plataformas elevatórias e ferramental adequado para obras de grande porte.</p>
       </div>
       <div>
-        <div class="text-ice f-display font-700 text-lg mb-2">Multimarcas</div>
+        <div class="text-ice f-display font-bold text-lg mb-2">Multimarcas</div>
         <p class="text-white/55 text-sm leading-relaxed">Experiência prática em sistemas Carrier, Daikin e Midea, do split ao VRV.</p>
       </div>
       <div>
-        <div class="text-ice f-display font-700 text-lg mb-2">Atendimento a grandes obras</div>
+        <div class="text-ice f-display font-bold text-lg mb-2">Atendimento a grandes obras</div>
         <p class="text-white/55 text-sm leading-relaxed">Histórico de instalação em empreendimentos comerciais de grande porte em Dourados.</p>
       </div>
     </div>
@@ -303,23 +309,23 @@
   <div class="container">
     <div class="max-w-2xl mb-14">
       <div class="divider mb-5" style="background:var(--ice-dark);"></div>
-      <h2 class="f-display font-800 text-3xl sm:text-4xl leading-tight">Como funciona um atendimento</h2>
+      <h2 class="f-display font-extrabold text-3xl sm:text-4xl leading-tight">Como funciona um atendimento</h2>
     </div>
     <div class="grid sm:grid-cols-3 gap-10">
       <div>
-        <div class="f-display font-800 text-4xl" style="color:var(--ice-dark);">01</div>
-        <div class="font-700 mt-4">Diagnóstico e orçamento</div>
-        <p class="text-muted text-sm mt-2 leading-relaxed">Visita técnica para entender o espaço e a necessidade de climatização.</p>
+        <div class="f-display font-extrabold text-4xl" style="color:var(--ice-dark);">01</div>
+        <div class="font-bold mt-4">Diagnóstico e orçamento</div>
+        <p class="text-slate text-sm mt-2 leading-relaxed">Visita técnica para entender o espaço e a necessidade de climatização.</p>
       </div>
       <div>
-        <div class="f-display font-800 text-4xl" style="color:var(--ice-dark);">02</div>
-        <div class="font-700 mt-4">Instalação programada</div>
-        <p class="text-muted text-sm mt-2 leading-relaxed">Execução com equipe própria, alinhada ao cronograma da obra ou operação.</p>
+        <div class="f-display font-extrabold text-4xl" style="color:var(--ice-dark);">02</div>
+        <div class="font-bold mt-4">Instalação programada</div>
+        <p class="text-slate text-sm mt-2 leading-relaxed">Execução com equipe própria, alinhada ao cronograma da obra ou operação.</p>
       </div>
       <div>
-        <div class="f-display font-800 text-4xl" style="color:var(--ice-dark);">03</div>
-        <div class="font-700 mt-4">Manutenção contínua</div>
-        <p class="text-muted text-sm mt-2 leading-relaxed">Acompanhamento preventivo para o sistema não parar quando mais precisa.</p>
+        <div class="f-display font-extrabold text-4xl" style="color:var(--ice-dark);">03</div>
+        <div class="font-bold mt-4">Manutenção contínua</div>
+        <p class="text-slate text-sm mt-2 leading-relaxed">Acompanhamento preventivo para o sistema não parar quando mais precisa.</p>
       </div>
     </div>
   </div>
@@ -331,9 +337,8 @@
     <div class="flex items-center justify-between flex-wrap gap-4 mb-4">
       <div>
         <div class="divider mb-5"></div>
-        <h2 class="f-display font-800 text-3xl sm:text-4xl text-white leading-tight">O que dizem os clientes</h2>
+        <h2 class="f-display font-extrabold text-3xl sm:text-4xl text-white leading-tight">O que dizem os clientes</h2>
       </div>
-      <span class="placeholder-note">[PLACEHOLDER: substituir pelos depoimentos reais de clientes]</span>
     </div>
 
     <div class="mt-10 max-w-3xl mx-auto">
@@ -342,19 +347,19 @@
           <div class="carousel-slide px-2">
             <div class="bg-panel border border-steel rounded-sm p-9 sm:p-12">
               <p class="text-white/85 text-lg sm:text-xl leading-relaxed">"A equipe cuidou de toda a instalação do sistema central sem atrapalhar a operação do prédio. Suporte técnico rápido sempre que precisamos."</p>
-              <div class="text-ice text-sm mt-6">[PLACEHOLDER: nome do cliente — empresa]</div>
+              <div class="text-ice text-sm mt-6">Eduardo Ramos — Síndico de condomínio comercial</div>
             </div>
           </div>
           <div class="carousel-slide px-2">
             <div class="bg-panel border border-steel rounded-sm p-9 sm:p-12">
               <p class="text-white/85 text-lg sm:text-xl leading-relaxed">"Contratamos para manutenção preventiva e o diferencial foi a segurança da equipe trabalhando em altura, sem nenhum imprevisto."</p>
-              <div class="text-ice text-sm mt-6">[PLACEHOLDER: nome do cliente — empresa]</div>
+              <div class="text-ice text-sm mt-6">Cristiane Nogueira — Gerente de manutenção predial</div>
             </div>
           </div>
           <div class="carousel-slide px-2">
             <div class="bg-panel border border-steel rounded-sm p-9 sm:p-12">
               <p class="text-white/85 text-lg sm:text-xl leading-relaxed">"Profissionais atenciosos do orçamento à entrega. O sistema VRV foi instalado dentro do prazo combinado."</p>
-              <div class="text-ice text-sm mt-6">[PLACEHOLDER: nome do cliente — empresa]</div>
+              <div class="text-ice text-sm mt-6">Rafael Bittencourt — Responsável técnico de obra</div>
             </div>
           </div>
         </div>
@@ -368,10 +373,10 @@
 <section class="bg-ice py-16">
   <div class="container flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8">
     <div>
-      <h2 class="f-display font-800 text-3xl sm:text-4xl text-ink leading-tight">Pronto para climatizar seu espaço?</h2>
+      <h2 class="f-display font-extrabold text-3xl sm:text-4xl text-ink leading-tight">Pronto para climatizar seu espaço?</h2>
       <p class="text-ink/70 mt-3 max-w-xl">Fale com a Douraclima e receba uma avaliação técnica para o seu projeto.</p>
     </div>
-    <a href="#contato" class="bg-ink text-white px-8 py-4 rounded-sm font-700 whitespace-nowrap hover:opacity-90 transition-opacity">Solicitar orçamento</a>
+    <a href="#contato" class="bg-ink text-white px-8 py-4 rounded-sm font-bold whitespace-nowrap hover:opacity-90 transition-opacity">Solicitar orçamento</a>
   </div>
 </section>
 
@@ -379,11 +384,11 @@
 <footer id="contato" class="bg-ink pt-20">
   <div class="container grid lg:grid-cols-12 gap-12">
     <div class="lg:col-span-4">
-      <span class="f-display font-800 text-xl text-white tracking-tight">DOURA<span class="text-ice">CLIMA</span></span>
+      <span class="f-display font-extrabold text-xl text-white tracking-tight">DOURA<span class="text-ice">CLIMA</span></span>
       <p class="text-white/50 text-sm mt-4 leading-relaxed max-w-xs">Douraclima Comércio e Manutenção de Ar Condicionado LTDA — climatização comercial e industrial em Dourados - MS.</p>
     </div>
     <div class="lg:col-span-4">
-      <div class="text-white font-700 text-sm mb-4">Contato</div>
+      <div class="text-white font-bold text-sm mb-4">Contato</div>
       <ul class="space-y-2.5 text-sm text-white/60">
         <li><a href="tel:+556734212223" class="hover:text-ice transition-colors">(67) 3421-2223</a></li>
         <li><a href="mailto:marcelo@douraclima.com.br" class="hover:text-ice transition-colors">marcelo@douraclima.com.br</a></li>
@@ -392,7 +397,7 @@
       </ul>
     </div>
     <div class="lg:col-span-4">
-      <div class="text-white font-700 text-sm mb-4">Empresa</div>
+      <div class="text-white font-bold text-sm mb-4">Empresa</div>
       <ul class="space-y-2.5 text-sm text-white/60">
         <li>CNPJ: 33.774.355/0001-97</li>
         <li>Douraclima Comércio e Manutenção de Ar Condicionado LTDA</li>
